@@ -5,51 +5,52 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sdk="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
-    xmlns:Regions="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+    xmlns:regions="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
     mc:Ignorable="d"
-    MinHeight="600"
-    MinWidth="800">
+    Width="400"
+    Height="500"
+    ResizeMode="NoResize">
 
-    <ItemsControl Regions:RegionManager.RegionName ="MasterRegion">
+    <ItemsControl regions:RegionManager.RegionName ="MasterRegion">
         <Grid x:Name="LayoutRoot" Background="LightGray">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*" MinHeight="100" />
-                <RowDefinition Height="4*" MinHeight="600"/>
+                <RowDefinition Height="1*" MinHeight="100"/>
+                <RowDefinition Height="4*" MinHeight="400"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition MaxWidth="300" MinWidth="100"/>
-                <ColumnDefinition MinWidth="500"/>
+                <ColumnDefinition Width="2*" MinWidth="50"/>
+                <ColumnDefinition Width="4*" MinWidth="150"/>
             </Grid.ColumnDefinitions>
 
-            <!--<ContentControl
+            <ContentControl
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Grid.Row="0"
                 VerticalContentAlignment="Stretch"
                 HorizontalContentAlignment="Stretch"
-                Regions:RegionManager.RegionName="HeaderRegion" />
+                regions:RegionManager.RegionName="HeaderRegion" />
 
             <ContentControl
                 Grid.Column="0"
                 Grid.Row="1"
                 VerticalContentAlignment="Stretch"
                 HorizontalContentAlignment="Stretch"
-                Regions:RegionManager.RegionName="MenuRegion" />
+                regions:RegionManager.RegionName="MenuRegion" />
 
             <GridSplitter
                 Grid.Row="1"
                 Grid.Column="0"
                 HorizontalAlignment="Right"
                 Background="LightGray"
-                Width="5"/>-->
+                Width="5"/>
 
             <ContentControl 
                 Grid.Column="1"
                 Grid.Row="1"
                 VerticalContentAlignment="Stretch"
                 HorizontalContentAlignment="Stretch"
-                Regions:RegionManager.RegionName="MainRegion"/>
+                regions:RegionManager.RegionName="MainRegion"/>
 
         </Grid>
     </ItemsControl>

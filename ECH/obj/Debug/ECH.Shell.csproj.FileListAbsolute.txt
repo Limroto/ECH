@@ -30,3 +30,39 @@ C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\obj\Debug\ECH.Shell
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\obj\Debug\ECH.Shell.csprojResolveAssemblyReference.cache
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.dll
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.exe.config
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.exe
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.exe
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\NLog.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\NLog.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csprojResolveAssemblyReference.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.baml
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\App.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell_MarkupCompile.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.g.resources
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.Properties.Resources.resources
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csproj.GenerateResource.Cache
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleB.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleB.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleC.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleC.pdb

@@ -134,6 +134,14 @@
       <Project>{D90C926D-DCEB-4A12-8008-4FC2CB78E793}</Project>
       <Name>ECH.ModuleA</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ECH.ModuleB\ECH.ModuleB.csproj">
+      <Project>{52DAD5B3-137B-40EE-972A-8AC342E28EB3}</Project>
+      <Name>ECH.ModuleB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleC\ECH.ModuleC.csproj">
+      <Project>{AB36E833-7DE1-4E24-B132-1D3D07DA529C}</Project>
+      <Name>ECH.ModuleC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

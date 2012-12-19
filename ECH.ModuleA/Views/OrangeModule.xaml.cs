@@ -6,7 +6,7 @@ namespace ECH.ModuleA.Views
 	/// <summary>
 	/// Interaction logic for OrangeModule.xaml
 	/// </summary>
-	[ViewSortHint("01")]
+	[ViewSortHint("02")]
 	public partial class OrangeModule : UserControl
 	{
 		public OrangeModule()

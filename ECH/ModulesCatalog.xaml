@@ -4,13 +4,23 @@
 	xmlns:modularity="clr-namespace:Microsoft.Practices.Prism.Modularity;assembly=Microsoft.Practices.Prism">
 
     <!-- 
-	Ref: SolutionName.xap
-	ModuleName: ProjectName
-	ModuleType: Ref(minus .xap).ModuleName, Ref(minus .xap), Version=1.0.0.0
+	Ref: ProjectName.xap
+	ModuleName: Name of .cs-file
+	ModuleType: Ref(minus .xap).ModuleName, Ref(minus .xap)
 	-->
     <modularity:ModuleInfo
 		Ref = "ECH.ModuleA.xap"
-		ModuleName = "ECH.ModuleA"
-		ModuleType = "ECH.ModuleA.ModuleA, ECH.ModuleA, Version=1.0.0.0" />
+		ModuleName = "ModuleA"
+		ModuleType = "ECH.ModuleA.ModuleA, ECH.ModuleA" />
+
+    <modularity:ModuleInfo
+		Ref = "ECH.ModuleB.xap"
+		ModuleName = "ModuleB"
+		ModuleType = "ECH.ModuleB.ModuleB, ECH.ModuleB" />
+
+    <modularity:ModuleInfo
+		Ref = "ECH.ModuleC.xap"
+		ModuleName = "ModuleC"
+		ModuleType = "ECH.ModuleC.ModuleC, ECH.ModuleC" />
 
 </modularity:ModuleCatalog>

@@ -21,25 +21,43 @@ namespace ECH.Shell
 			Application.Current.MainWindow.Show();
 		}
 
-		protected override void ConfigureModuleCatalog()
-		{
-			Type moduleCType = typeof(ModuleA.ModuleA);
-			ModuleCatalog.AddModule(
-				new ModuleInfo()
-				{
-					ModuleName = moduleCType.Name,
-					ModuleType = moduleCType.AssemblyQualifiedName,
-				});
-		}
-
-		//protected override IModuleCatalog CreateModuleCatalog()
+		//protected override void ConfigureModuleCatalog()
 		//{
-		//	//var uri = new Uri("/ECH.Shell;component/ModulesCatalog.xaml", UriKind.Relative);
+		//	Type moduleAType = typeof(ModuleA.ModuleA);
 
-		//	//var catalog = Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(uri);
+		//	ModuleCatalog.AddModule(
+		//		new ModuleInfo()
+		//		{
+		//			ModuleName = moduleAType.Name,
+		//			ModuleType = moduleAType.AssemblyQualifiedName,
+		//		});
 
-		//	//return catalog;
+		//	Type moduleBType = typeof(ModuleB.ModuleB);
+
+		//	ModuleCatalog.AddModule(
+		//		new ModuleInfo()
+		//		{
+		//			ModuleName = moduleBType.Name,
+		//			ModuleType = moduleBType.AssemblyQualifiedName,
+		//		});
+
+		//	Type moduleCType = typeof(ModuleC.ModuleC);
+		//	ModuleCatalog.AddModule(
+		//		new ModuleInfo()
+		//		{
+		//			ModuleName = moduleCType.Name,
+		//			ModuleType = moduleCType.AssemblyQualifiedName,
+		//		});
 		//}
+
+		protected override IModuleCatalog CreateModuleCatalog()
+		{
+			var uri = new Uri("/ECH.Shell;component/ModulesCatalog.xaml", UriKind.Relative);
+
+			var catalog = Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(uri);
+
+			return catalog;
+		}
 
 		protected override void ConfigureContainer()
 		{

@@ -66,3 +66,5 @@ C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleB.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleB.pdb
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleC.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleC.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Infrastructure.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Infrastructure.pdb

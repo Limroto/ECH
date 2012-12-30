@@ -24,3 +24,5 @@ C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\Microsoft.Practices.
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\NLog.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\ECH.ModuleB.dll.CodeAnalysisLog.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\ECH.ModuleB.dll.lastcodeanalysissucceeded

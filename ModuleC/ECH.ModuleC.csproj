@@ -58,6 +58,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity">
       <HintPath>..\packages\Prism.4.1.0.0\lib\NET40\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -70,8 +71,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LightGreenModule.xaml.cs">
-      <DependentUpon>LightGreenModule.xaml</DependentUpon>
+    <Compile Include="ViewModels\TopViewModel.cs" />
+    <Compile Include="Views\ITopView.cs" />
+    <Compile Include="Views\TopView.xaml.cs">
+      <DependentUpon>TopView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ModuleC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,10 +83,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="LightGreenModule.xaml">
+    <Page Include="Views\TopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECH.Infrastructure\ECH.Infrastructure.csproj">
+      <Project>{B6E8A2F5-5912-4EF0-95F2-A42F23375A05}</Project>
+      <Name>ECH.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

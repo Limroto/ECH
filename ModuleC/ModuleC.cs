@@ -1,27 +1,48 @@
-﻿using Microsoft.Practices.Prism.Modularity;
+﻿using System.Windows.Media;
+using ECH.ModuleC.ViewModels;
+using ECH.ModuleC.Views;
+using Microsoft.Practices.Prism.Events;
+using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
-using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
 
 namespace ECH.ModuleC
 {
-    public class ModuleC : IModule 
+  public class ModuleC : IModule
+  {
+    private readonly IUnityContainer _container;
+    private readonly IRegionManager _regionManager;
+
+    public ModuleC(IUnityContainer container, IRegionManager regionManager)
     {
-			public void Initialize()
-			{
-				//Register always-avaible controls to the Prism Region Manager
-				var regionManager = ServiceLocator.Current.GetInstance<IRegionManager>();
+      _container = container;
+      _regionManager = regionManager;
 
-				//regionManager.RegisterViewWithRegion("Region-To-Load-Into", typeof (View-to-load))
-				regionManager.RegisterViewWithRegion("HeaderRegion", typeof(LightGreenModule));
-
-
-				//Register on-demand controls with DI container
-				//This means view of later-to-come
-				var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
-
-				//container.RegisterType<Object, className>("Region-To-Load-Into")
-				//container.RegisterType<Object, OrangeModule>("");
-			}
+      RegisterViewsAndServices();
     }
+
+    private void RegisterViewsAndServices()
+    {
+      _container.RegisterType<TopViewModel>();
+      _container.RegisterType<ITopView, TopView>();
+    }
+
+    public void Initialize()
+    {
+      TopView topView1 = _container.Resolve<TopView>();
+      //TopView topView2 = _container.Resolve<TopView>();
+
+      topView1.Activator(true);
+      topView1.BackgroundColor(new SolidColorBrush(Color.FromRgb(0, 255, 0)));
+      topView1.Content("Start");
+
+      //topView2.Activator(false);
+      //topView1.BackgroundColor(new SolidColorBrush(Color.FromRgb(255, 0, 0)));
+      //topView2.Content("Stop");
+
+      IRegion topRegion = _regionManager.Regions["HeaderRegion"];
+      topRegion.Add(topView1);
+      //topRegion.Add(topView2);
+    }
+  }
 }

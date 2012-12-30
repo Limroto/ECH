@@ -11,7 +11,7 @@
     Height="500"
     ResizeMode="NoResize">
 
-    <ItemsControl regions:RegionManager.RegionName ="MasterRegion">
+    <!--<ItemsControl regions:RegionManager.RegionName ="MasterRegion">-->
         <Grid x:Name="LayoutRoot" Background="LightGray">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" MinHeight="100"/>
@@ -53,7 +53,7 @@
                 regions:RegionManager.RegionName="MainRegion"/>
 
         </Grid>
-    </ItemsControl>
+    <!--</ItemsControl>-->
 
 
 </Window>

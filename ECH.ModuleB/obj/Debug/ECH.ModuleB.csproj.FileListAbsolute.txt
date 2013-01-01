@@ -1,6 +1,4 @@
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.csprojResolveAssemblyReference.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\Views\LightBlueModule.baml
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\Views\LightBlueModule.g.cs
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB_MarkupCompile.cache
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\ECH.ModuleB.dll
@@ -24,3 +22,5 @@ C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\Microsoft.Practices.
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\bin\Debug\NLog.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\ECH.ModuleB.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\Views\MenuView.baml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleB\obj\Debug\Views\MenuView.g.cs

@@ -1,0 +1,16 @@
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.ControllerUnit.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.ControllerUnit.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\obj\Debug\ECH.ControllerUnit.csprojResolveAssemblyReference.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\obj\Debug\ECH.ControllerUnit.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\obj\Debug\ECH.ControllerUnit.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.Infrastructure.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.ModuleA.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.Infrastructure.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ControllerUnit\bin\Debug\ECH.ModuleA.pdb

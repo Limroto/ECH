@@ -1,6 +1,4 @@
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.csprojResolveAssemblyReference.cache
-C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\LightGreenModule.baml
-C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\LightGreenModule.g.cs
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC_MarkupCompile.cache
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\ECH.ModuleC.dll
@@ -24,3 +22,7 @@ C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\Microsoft.Practices.Unit
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\NLog.xml
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.dll
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.pdb
+C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\Views\TopView.baml
+C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\Views\TopView.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\ECH.Infrastructure.dll
+C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\ECH.Infrastructure.pdb

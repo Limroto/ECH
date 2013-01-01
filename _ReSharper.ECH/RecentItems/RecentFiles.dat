@@ -1,0 +1,43 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:Views/f:TopView.xaml" caret="1357" fromTop="33" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:Bootstrapper.cs" caret="560" fromTop="16" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/f:packages.config" caret="0" fromTop="0" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/d:Views/f:MenuView.xaml" caret="490" fromTop="15" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/d:Views/f:MenuView.xaml.cs" caret="372" fromTop="14" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:Views/f:TopView.xaml.cs" caret="0" fromTop="0" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:Views/f:SettingsView.xaml.cs" caret="405" fromTop="14" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/d:ViewModels/f:MenuViewModel.cs" caret="76" fromTop="4" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/f:ModuleC.cs" caret="631" fromTop="24" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:Shell.xaml" caret="110" fromTop="0" />
+    <File id="B6E8A2F5-5912-4EF0-95F2-A42F23375A05/d:Events/f:ActivateMotorEvent.cs" caret="515" fromTop="25" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:App.xaml.cs" caret="337" fromTop="17" />
+    <File id="ABA97A8D-8E7D-462E-A07B-E64172333E2E/f:ModuleControllerUnit.cs" caret="724" fromTop="26" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:packages.config" caret="434" fromTop="7" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:ModulesCatalog.xaml" caret="1024" fromTop="30" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/f:ModuleB.cs" caret="0" fromTop="0" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:ViewModels/f:TopViewModel.cs" caret="786" fromTop="27" />
+    <File id="ABA97A8D-8E7D-462E-A07B-E64172333E2E/f:MotorController.cs" caret="672" fromTop="18" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:Views/f:SettingsView.xaml" caret="2725" fromTop="30" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/f:ModuleA.cs" caret="0" fromTop="0" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:ViewModels/f:SettingsViewModel.cs" caret="1889" fromTop="39" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/f:ModuleC.cs" caret="29" fromTop="0" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:Views/f:TopView.xaml" caret="1357" fromTop="33" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:Shell.xaml" caret="2013" fromTop="49" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:Views/f:TopView.xaml.cs" caret="367" fromTop="15" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/f:ModuleB.cs" caret="689" fromTop="24" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/d:Views/f:MenuView.xaml" caret="402" fromTop="8" />
+    <File id="52DAD5B3-137B-40EE-972A-8AC342E28EB3/d:Views/f:MenuView.xaml.cs" caret="386" fromTop="14" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:Views/f:SettingsView.xaml.cs" caret="405" fromTop="14" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/f:ModuleA.cs" caret="412" fromTop="14" />
+    <File id="B6E8A2F5-5912-4EF0-95F2-A42F23375A05/d:Events/f:ActivateMotorEvent.cs" caret="67" fromTop="2" />
+    <File id="AB36E833-7DE1-4E24-B132-1D3D07DA529C/d:ViewModels/f:TopViewModel.cs" caret="893" fromTop="30" />
+    <File id="ABA97A8D-8E7D-462E-A07B-E64172333E2E/f:ModuleControllerUnit.cs" caret="191" fromTop="6" />
+    <File id="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA/f:ModulesCatalog.xaml" caret="993" fromTop="28" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:ViewModels/f:SettingsViewModel.cs" caret="1401" fromTop="22" />
+    <File id="ABA97A8D-8E7D-462E-A07B-E64172333E2E/f:MotorController.cs" caret="1095" fromTop="33" />
+    <File id="D90C926D-DCEB-4A12-8008-4FC2CB78E793/d:Views/f:SettingsView.xaml" caret="2801" fromTop="30" />
+  </RecentEdits>
+</RecentFiles>

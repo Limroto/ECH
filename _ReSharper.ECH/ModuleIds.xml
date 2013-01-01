@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="AB36E833-7DE1-4E24-B132-1D3D07DA529C" ModuleId="ECH.ModuleC" />
+  <Module PersistentId="3AAC00AB-C36D-42E5-8AAE-D70B2E78C2DA" ModuleId="ECH.Shell" />
+  <Module PersistentId="52DAD5B3-137B-40EE-972A-8AC342E28EB3" ModuleId="ECH.ModuleB" />
+  <Module PersistentId="B6E8A2F5-5912-4EF0-95F2-A42F23375A05" ModuleId="ECH.Infrastructure" />
+  <Module PersistentId="D90C926D-DCEB-4A12-8008-4FC2CB78E793" ModuleId="ECH.ModuleA" />
+  <Module PersistentId="ABA97A8D-8E7D-462E-A07B-E64172333E2E" ModuleId="ECH.ControllerUnit" />
+</Modules>

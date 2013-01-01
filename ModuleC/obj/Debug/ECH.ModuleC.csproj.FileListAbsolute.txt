@@ -24,7 +24,5 @@ C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.dll
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC.pdb
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\Views\TopView.baml
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\Views\TopView.g.cs
-C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Becks\Documents\Projects\ECH\ModuleC\obj\Debug\ECH.ModuleC_MarkupCompile.lref
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\ECH.Infrastructure.dll
 C:\Users\Becks\Documents\Projects\ECH\ModuleC\bin\Debug\ECH.Infrastructure.pdb

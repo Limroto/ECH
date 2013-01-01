@@ -23,4 +23,9 @@
 		ModuleName = "ModuleC"
 		ModuleType = "ECH.ModuleC.ModuleC, ECH.ModuleC" />
 
+    <!--<modularity:ModuleInfo
+		Ref = "ECH.ControllerUnit.xap"
+		ModuleName = "ModuleControllerUnit"
+		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit" />-->
+
 </modularity:ModuleCatalog>

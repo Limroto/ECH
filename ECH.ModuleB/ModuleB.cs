@@ -1,4 +1,5 @@
-﻿using ECH.ModuleB.Views;
+﻿using ECH.ModuleB.ViewModels;
+using ECH.ModuleB.Views;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.ServiceLocation;
@@ -6,23 +7,30 @@ using Microsoft.Practices.Unity;
 
 namespace ECH.ModuleB
 {
-    public class ModuleB : IModule 
+  public class ModuleB : IModule
+  {
+    private readonly IUnityContainer _container;
+    private readonly IRegionManager _regionManager;
+
+    public ModuleB(IUnityContainer container, IRegionManager regionManager)
     {
-	    public void Initialize()
-	    {
-				//Register always-avaible controls to the Prism Region Manager
-				var regionManager = ServiceLocator.Current.GetInstance<IRegionManager>();
+      _container = container;
+      _regionManager = regionManager;
 
-				//regionManager.RegisterViewWithRegion("Region-To-Load-Into", typeof (View-to-load))
-				regionManager.RegisterViewWithRegion("MenuRegion", typeof(LightBlueModule));
-
-
-				//Register on-demand controls with DI container
-				//This means view of later-to-come
-				var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
-
-				//container.RegisterType<Object, className>("Region-To-Load-Into")
-				//container.RegisterType<Object, OrangeModule>("");
-	    }
+      RegisterViewsAndServices();
     }
+
+    private void RegisterViewsAndServices()
+    {
+      _container.RegisterType<MenuViewModel>();
+    }
+
+    public void Initialize()
+    {
+      MenuView topView1 = _container.Resolve<MenuView>();
+
+      IRegion topRegion = _regionManager.Regions["MenuRegion"];
+      topRegion.Add(topView1);
+    }
+  }
 }

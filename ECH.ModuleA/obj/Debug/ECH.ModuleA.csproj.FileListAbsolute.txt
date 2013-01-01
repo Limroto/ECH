@@ -44,9 +44,11 @@ C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\NLog.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.csprojResolveAssemblyReference.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\OrangeModule.baml
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\OrangeModule.g.cs
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA_MarkupCompile.cache
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.baml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\ECH.Infrastructure.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\ECH.Infrastructure.pdb

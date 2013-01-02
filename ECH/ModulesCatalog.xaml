@@ -5,36 +5,36 @@
 	xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!-- 
-	    Ref: ProjectName.xap
-	    ModuleName: Project Name
+	    Ref: ProjectName / assembly
+	    ModuleName: ProjectName
 	    ModuleType: ModuleName.name-of-module.cs-file, Ref minus '.xap'
 	-->
     <prism:ModuleInfo
-		Ref = "ECH.ModuleA.xap"
+		Ref = "ECH.ModuleA"
 		ModuleName = "ECH.ModuleA"
 		ModuleType = "ECH.ModuleA.ModuleA, ECH.ModuleA" />
 
     <prism:ModuleInfo
-		Ref = "ECH.ModuleB.xap"
+		Ref = "ECH.ModuleB"
 		ModuleName = "ECH.ModuleB"
 		ModuleType = "ECH.ModuleB.ModuleB, ECH.ModuleB" />
 
     <!--<prism:ModuleInfo
-        Ref = "ECH.ControllerUnit.xap"
+        Ref = "ECH.ControllerUnit"
 		ModuleName = "ECH.ControllerUnit"
 		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit" />-->
 
-    <prism:ModuleInfo
-        Ref = "ECH.Infrastructure.xap"
+    <!--<prism:ModuleInfo
+        Ref = "ECH.Infrastructure"
 		ModuleName = "ECH.Infrastructure"
-		ModuleType = "ECH.Infrastructure.ModuleControllerUnit, ECH.Infrastructure" />
+		ModuleType = "ECH.Infrastructure.ModuleControllerUnit, ECH.Infrastructure" />-->
 
     <prism:ModuleInfo
-		Ref = "ECH.ModuleC.xap"
+		Ref = "ECH.ModuleC"
 		ModuleName = "ECH.ModuleC"
 		ModuleType = "ECH.ModuleC.ModuleC, ECH.ModuleC">
         <!--<modularity:ModuleInfo.DependsOn>
-            <sys:String>ModuleControllerUnit</sys:String>
+            <sys:String>ControllerUnit</sys:String>
         </modularity:ModuleInfo.DependsOn>-->
     </prism:ModuleInfo>
 

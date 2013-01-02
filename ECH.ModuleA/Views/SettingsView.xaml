@@ -85,10 +85,13 @@
 
             <Button
                 Content="CW"
-                cmd:Click.Command="{Binding RotationDirectionCommand}"/>
+                cmd:Click.Command="{Binding Path=RotationDirectionCommand}"
+                cmd:Click.CommandParameter="{Binding Path=Clockwise}"/>
 
             <Button
-                Content="CCW"/>
+                Content="CCW"
+                cmd:Click.Command="{Binding Path=RotationDirectionCommand}"
+                cmd:Click.CommandParameter="{Binding Path=Clockwise}"/>
         </StackPanel>
     </Grid>
 </UserControl>

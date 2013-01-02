@@ -24,7 +24,7 @@ namespace ECH.ControllerUnit
 
     public void Initialize()
     {
-      throw new System.NotImplementedException();
+	    _container.RegisterType<MotorController>();
     }
   }
 }

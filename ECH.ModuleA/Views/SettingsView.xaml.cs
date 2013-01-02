@@ -10,12 +10,14 @@ namespace ECH.ModuleA.Views
 	[ViewSortHint("02")]
 	public partial class SettingsView : UserControl
 	{
-	  private readonly SettingsViewModel _settingsViewModel;
-
-	  public SettingsView(SettingsViewModel settingsViewModel)
+		public SettingsView()
 		{
-		  _settingsViewModel = settingsViewModel;
-		  InitializeComponent();
+			InitializeComponent();
+		}
+	 
+	  public SettingsView(SettingsViewModel settingsViewModel) : this()
+		{
+		  DataContext = settingsViewModel;
 		}
 	}
 }

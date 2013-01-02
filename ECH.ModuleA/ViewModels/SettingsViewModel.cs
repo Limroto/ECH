@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows.Input;
 using ECH.Infrastructure.Events;
 using Microsoft.Practices.Prism.Commands;
@@ -22,13 +17,21 @@ namespace ECH.ModuleA.ViewModels
       StartCommand = new DelegateCommand(StartCommandExecute, StartCommandCanExecute);
       StopCommand = new DelegateCommand(StopCommandExecute, StopCommandCanExecute);
       RotationSpeedCommand = new DelegateCommand(RotationSpeedCommandExecute, RotationSpeedCommandCanExecute);
-      RotationDirectionCommand = new DelegateCommand(RotationDirectionCommandExecute, RotationDirectionCommandCanExecute);
+      RotationDirectionCommand = new DelegateCommand<object>(RotationDirectionCommandExecute, RotationDirectionCommandCanExecute);
     }
-
     public ICommand StartCommand { get; set; }
     public ICommand StopCommand { get; set; }
     public ICommand RotationSpeedCommand { get; set; }
     public ICommand RotationDirectionCommand { get; set; }
+
+	  public RotationDirection Clockwise
+	  {
+		  get { return RotationDirection.Clockwise;}
+	  }
+		public RotationDirection AntiClockwise
+		{
+			get { return RotationDirection.AntiClockwise; }
+		}
 
     #region Commands Execute
 
@@ -56,10 +59,10 @@ namespace ECH.ModuleA.ViewModels
       _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
     }
 
-    private void RotationDirectionCommandExecute()
+    private void RotationDirectionCommandExecute(object arg)
     {
       var motor = new Motor();
-      motor.Activated = false;
+	    motor.Rotation = (RotationDirection)arg;
 
       _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
     }
@@ -83,7 +86,7 @@ namespace ECH.ModuleA.ViewModels
       return true;
     }
 
-    private bool RotationDirectionCommandCanExecute()
+    private bool RotationDirectionCommandCanExecute(object arg)
     {
       return true;
     }

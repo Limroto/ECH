@@ -21,38 +21,10 @@ namespace ECH.Shell
 			Application.Current.MainWindow.Show();
 		}
 
-		//protected override void ConfigureModuleCatalog()
-		//{
-		//	Type moduleAType = typeof(ModuleA.ModuleA);
-
-		//	ModuleCatalog.AddModule(
-		//		new ModuleInfo()
-		//		{
-		//			ModuleName = moduleAType.Name,
-		//			ModuleType = moduleAType.AssemblyQualifiedName,
-		//		});
-
-		//	Type moduleBType = typeof(ModuleB.ModuleB);
-
-		//	ModuleCatalog.AddModule(
-		//		new ModuleInfo()
-		//		{
-		//			ModuleName = moduleBType.Name,
-		//			ModuleType = moduleBType.AssemblyQualifiedName,
-		//		});
-
-		//	Type moduleCType = typeof(ModuleC.ModuleC);
-		//	ModuleCatalog.AddModule(
-		//		new ModuleInfo()
-		//		{
-		//			ModuleName = moduleCType.Name,
-		//			ModuleType = moduleCType.AssemblyQualifiedName,
-		//		});
-		//}
-
 		protected override IModuleCatalog CreateModuleCatalog()
 		{
-			var uri = new Uri("/ECH.Shell;component/ModulesCatalog.xaml", UriKind.Relative);
+			const string path = "/ECH.Shell;component/ModulesCatalog.xaml";
+			var uri = new Uri(path, UriKind.Relative);
 
 			var catalog = Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(uri);
 

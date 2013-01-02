@@ -9,7 +9,6 @@ namespace ECH.ControllerUnit
     public class MotorController
     {
       private readonly IEventAggregator _eventAggregator;
-      private readonly IUnityContainer _container;
       private SubscriptionToken subscriptionToken;
 
       public MotorController(IEventAggregator eventAggregator)

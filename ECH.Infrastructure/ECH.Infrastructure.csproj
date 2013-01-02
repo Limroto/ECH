@@ -33,6 +33,9 @@
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>..\ECH\bin\Debug\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\ECH\bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\ActivateMotorEvent.cs" />
+    <Compile Include="ModuleInfrastructure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

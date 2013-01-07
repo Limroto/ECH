@@ -16,12 +16,12 @@ namespace ECH.Database
 
         private void RegisterViewsAndServices()
         {
-            _container.RegisterType<ConfigurationBuilder>();
+            _container.RegisterType<IConfigurationBuilder, ConfigurationBuilder>();
         }
 
         public void Initialize()
         {
-            //ConfigurationBuilder cfg = _container.Resolve<ConfigurationBuilder>();
+            ConfigurationBuilder cfg = _container.Resolve<ConfigurationBuilder>();
         }
     }
 }

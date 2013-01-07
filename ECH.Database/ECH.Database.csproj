@@ -65,6 +65,7 @@
     <Compile Include="Database.cs" />
     <Compile Include="Entities\Settings.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="IConfigurationBuilder.cs" />
     <Compile Include="Mappings\SettingsMapping.cs" />
     <Compile Include="Mappings\UserMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

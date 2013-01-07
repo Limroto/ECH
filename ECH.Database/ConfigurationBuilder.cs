@@ -8,7 +8,7 @@ using NHibernate.Tool.hbm2ddl;
 
 namespace ECH.Database
 {
-    public class ConfigurationBuilder
+    public class ConfigurationBuilder : IConfigurationBuilder
     {
         private ISessionFactory _sessionFactory;
         private const string DbFile = "ECHDatabase";

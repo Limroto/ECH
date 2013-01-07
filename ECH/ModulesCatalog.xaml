@@ -38,9 +38,15 @@
         </modularity:ModuleInfo.DependsOn>-->
     </prism:ModuleInfo>
 
-    <prism:ModuleInfo
+    <!--
+    This module is the database. 
+    It should be accesable via some global commands. Perhaps the Shell must initialize it?
+    
+    Error Theory: Cannot be loaded since the .dll-file is not created in the ECH/Debug/bin folder
+    -->
+    <!--<prism:ModuleInfo
 		Ref = "ECH.Database"
 		ModuleName = "ECH.Database"
-		ModuleType = "ECH.Database.Database, ECH.Database" />
+		ModuleType = "ECH.Database.Database, ECH.Database" />-->
 
 </prism:ModuleCatalog>

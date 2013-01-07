@@ -38,4 +38,9 @@
         </modularity:ModuleInfo.DependsOn>-->
     </prism:ModuleInfo>
 
+    <prism:ModuleInfo
+		Ref = "ECH.Database"
+		ModuleName = "ECH.Database"
+		ModuleType = "ECH.Database.Database, ECH.Database" />
+
 </prism:ModuleCatalog>

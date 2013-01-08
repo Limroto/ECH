@@ -31,14 +31,6 @@ C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\obj\Debug\ECH.Shell
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.dll
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.pdb
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.exe.config
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csprojResolveAssemblyReference.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.baml
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.g.cs
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\App.g.cs
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell_MarkupCompile.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.g.resources
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.Properties.Resources.resources
-C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csproj.GenerateResource.Cache
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.exe
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Shell.pdb
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.ModuleA.dll
@@ -66,5 +58,21 @@ C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.xm
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\NLog.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\ECH.Infrastructure.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csprojResolveAssemblyReference.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.baml
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\Shell.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\App.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell_MarkupCompile.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.g.resources
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.Properties.Resources.resources
+C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.csproj.GenerateResource.Cache
 C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.exe
 C:\Users\Becks\Documents\Projects\ECH\ECH\obj\Debug\ECH.Shell.pdb
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\FluentNHibernate.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Iesi.Collections.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\NHibernate.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\System.Data.SQLite.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\FluentNHibernate.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\Iesi.Collections.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH\bin\Debug\NHibernate.xml

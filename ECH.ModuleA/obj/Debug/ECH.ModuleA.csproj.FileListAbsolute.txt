@@ -24,11 +24,6 @@ C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH.ModuleA\obj\Debug\E
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.dll
 C:\Users\Becks\documents\visual studio 2012\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.pdb
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.csprojResolveAssemblyReference.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.baml
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.g.cs
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA_MarkupCompile.cache
-C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\ECH.ModuleA.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\ECH.ModuleA.pdb
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\ECH.Infrastructure.dll
@@ -50,5 +45,10 @@ C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\bin\Debug\NLog.xml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.csprojResolveAssemblyReference.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.baml
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.g.cs
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA_MarkupCompile.cache
+C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.pdb

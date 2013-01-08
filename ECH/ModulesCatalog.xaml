@@ -44,9 +44,9 @@
     
     Error Theory: Cannot be loaded since the .dll-file is not created in the ECH/Debug/bin folder
     -->
-    <!--<prism:ModuleInfo
+    <prism:ModuleInfo
 		Ref = "ECH.Database"
 		ModuleName = "ECH.Database"
-		ModuleType = "ECH.Database.Database, ECH.Database" />-->
+		ModuleType = "ECH.Database.Database, ECH.Database" />
 
 </prism:ModuleCatalog>

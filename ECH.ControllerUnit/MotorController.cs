@@ -27,7 +27,7 @@ namespace ECH.ControllerUnit
           activateMotorEvent.Unsubscribe(subscriptionToken);
         }
 
-        subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler,  ThreadOption.UIThread, false);
+        subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler, ThreadOption., false);
       }
 
       #region Handlers
@@ -35,7 +35,6 @@ namespace ECH.ControllerUnit
       public void ActivateMoterHandler(Motor motor)
       {
         SystemSounds.Asterisk.Play();
-        Thread.Sleep(300);
       }
 
       #endregion

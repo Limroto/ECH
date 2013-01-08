@@ -2,8 +2,7 @@
 
 namespace ECH.Infrastructure.Events
 {
-  public class ActivateMotorEvent : CompositePresentationEvent<Motor>
-  { }
+  public class ActivateMotorEvent : CompositePresentationEvent<Motor>{}
 
   public class Motor
   {

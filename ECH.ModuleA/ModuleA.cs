@@ -1,4 +1,5 @@
-﻿using ECH.ModuleA.ViewModels;
+﻿using ECH.ModuleA.Model;
+using ECH.ModuleA.ViewModels;
 using ECH.ModuleA.Views;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
@@ -23,11 +24,13 @@ namespace ECH.ModuleA
     private void RegisterViewsAndServices()
     {
       _container.RegisterType<SettingsViewModel>();
+      _container.RegisterType<TestEvent>();
     }
 
     public void Initialize()
     {
       SettingsView topView1 = _container.Resolve<SettingsView>();
+        _container.Resolve<TestEvent>();
 
       IRegion topRegion = _regionManager.Regions["MainRegion"];
       topRegion.Add(topView1);

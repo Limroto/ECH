@@ -24,7 +24,7 @@ namespace ECH.ControllerUnit
 
     public void Initialize()
     {
-        base.MemberwiseClone();
+        _container.Resolve<MotorController>();
     }
   }
 }

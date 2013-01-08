@@ -19,15 +19,15 @@
 		ModuleName = "ECH.ModuleB"
 		ModuleType = "ECH.ModuleB.ModuleB, ECH.ModuleB" />
 
-    <!--<prism:ModuleInfo
+    <prism:ModuleInfo
         Ref = "ECH.ControllerUnit"
 		ModuleName = "ECH.ControllerUnit"
-		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit" />-->
+		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit" />
 
-    <!--<prism:ModuleInfo
+    <prism:ModuleInfo
         Ref = "ECH.Infrastructure"
 		ModuleName = "ECH.Infrastructure"
-		ModuleType = "ECH.Infrastructure.ModuleControllerUnit, ECH.Infrastructure" />-->
+		ModuleType = "ECH.Infrastructure.ModuleInfrastructure, ECH.Infrastructure" />
 
     <prism:ModuleInfo
 		Ref = "ECH.ModuleC"

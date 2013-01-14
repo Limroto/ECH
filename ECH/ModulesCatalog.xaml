@@ -9,44 +9,55 @@
 	    ModuleName: ProjectName
 	    ModuleType: ModuleName.name-of-module.cs-file, Ref minus '.xap'
 	-->
-    <prism:ModuleInfo
-		Ref = "ECH.ModuleA"
-		ModuleName = "ECH.ModuleA"
-		ModuleType = "ECH.ModuleA.ModuleA, ECH.ModuleA" />
-
-    <prism:ModuleInfo
-		Ref = "ECH.ModuleB"
-		ModuleName = "ECH.ModuleB"
-		ModuleType = "ECH.ModuleB.ModuleB, ECH.ModuleB" />
-
-    <prism:ModuleInfo
-        Ref = "ECH.ControllerUnit"
-		ModuleName = "ECH.ControllerUnit"
-		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit" />
 
     <prism:ModuleInfo
         Ref = "ECH.Infrastructure"
 		ModuleName = "ECH.Infrastructure"
 		ModuleType = "ECH.Infrastructure.ModuleInfrastructure, ECH.Infrastructure" />
+    
+    <prism:ModuleInfo
+		Ref = "ECH.ModuleA"
+		ModuleName = "ECH.ModuleA"
+		ModuleType = "ECH.ModuleA.ModuleA, ECH.ModuleA">
+        <prism:ModuleInfo.DependsOn>
+            <sys:String>ECH.Infrastructure</sys:String>
+        </prism:ModuleInfo.DependsOn>
+    </prism:ModuleInfo>
+
+    <prism:ModuleInfo
+		Ref = "ECH.ModuleB"
+		ModuleName = "ECH.ModuleB"
+		ModuleType = "ECH.ModuleB.ModuleB, ECH.ModuleB">
+        <prism:ModuleInfo.DependsOn>
+            <sys:String>ECH.Infrastructure</sys:String>
+        </prism:ModuleInfo.DependsOn>
+    </prism:ModuleInfo>
+
+    <prism:ModuleInfo
+        Ref = "ECH.ControllerUnit"
+		ModuleName = "ECH.ControllerUnit"
+		ModuleType = "ECH.ControllerUnit.ModuleControllerUnit, ECH.ControllerUnit">
+        <prism:ModuleInfo.DependsOn>
+            <sys:String>ECH.Infrastructure</sys:String>
+        </prism:ModuleInfo.DependsOn>
+    </prism:ModuleInfo>
 
     <prism:ModuleInfo
 		Ref = "ECH.ModuleC"
 		ModuleName = "ECH.ModuleC"
 		ModuleType = "ECH.ModuleC.ModuleC, ECH.ModuleC">
-        <!--<modularity:ModuleInfo.DependsOn>
-            <sys:String>ControllerUnit</sys:String>
-        </modularity:ModuleInfo.DependsOn>-->
+        <prism:ModuleInfo.DependsOn>
+            <sys:String>ECH.Infrastructure</sys:String>
+        </prism:ModuleInfo.DependsOn>
     </prism:ModuleInfo>
 
-    <!--
-    This module is the database. 
-    It should be accesable via some global commands. Perhaps the Shell must initialize it?
-    
-    Error Theory: Cannot be loaded since the .dll-file is not created in the ECH/Debug/bin folder
-    -->
     <prism:ModuleInfo
 		Ref = "ECH.Database"
 		ModuleName = "ECH.Database"
-		ModuleType = "ECH.Database.Database, ECH.Database" />
+		ModuleType = "ECH.Database.Database, ECH.Database">
+        <prism:ModuleInfo.DependsOn>
+            <sys:String>ECH.Infrastructure</sys:String>
+        </prism:ModuleInfo.DependsOn>
+    </prism:ModuleInfo>
 
 </prism:ModuleCatalog>

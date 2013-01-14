@@ -1,18 +1,23 @@
 ﻿using System.ComponentModel;
 using System.Windows.Input;
+using ECH.Infrastructure;
 using ECH.Infrastructure.Events;
+using ECH.Infrastructure.Implementation;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
+using Microsoft.Practices.Unity;
 
 namespace ECH.ModuleC.ViewModels
 {
   public class TopViewModel : INotifyPropertyChanged
   {
-    private readonly IEventAggregator _eventAggregator;
+      private readonly IUnityContainer _container;
+      private readonly IEventAggregator _eventAggregator;
 
-    public TopViewModel(IEventAggregator eventAggregator)
+    public TopViewModel(IUnityContainer container, IEventAggregator eventAggregator)
     {
-      _eventAggregator = eventAggregator;
+        _container = container;
+        _eventAggregator = eventAggregator;
       StartCommand = new DelegateCommand(StartCommandExecute, StartCommandCanExecute);
       StopCommand = new DelegateCommand(StopCommandExecute, StopCommandCanExecute);
     }
@@ -21,16 +26,15 @@ namespace ECH.ModuleC.ViewModels
     public ICommand StopCommand { get; set; }
 
     public bool activator;
-    
-    
+      
     #region Commands
 
     private void StopCommandExecute()
     {
-      var motor = new Motor();
+        var motor = _container.Resolve<Motor>();
       motor.Activated = false;
 
-      _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
+      _eventAggregator.GetEvent<UpdateMotorEvent>().Publish(motor);
     }
 
     private bool StopCommandCanExecute()

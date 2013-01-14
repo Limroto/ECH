@@ -1,8 +1,8 @@
 ﻿using System.Media;
-using System.Threading;
+using ECH.Infrastructure;
 using ECH.Infrastructure.Events;
+using ECH.Infrastructure.Implementation;
 using Microsoft.Practices.Prism.Events;
-using Microsoft.Practices.Unity;
 
 namespace ECH.ControllerUnit
 {
@@ -20,14 +20,14 @@ namespace ECH.ControllerUnit
 
       private void SubscribeToEvents()
       {
-        var activateMotorEvent = _eventAggregator.GetEvent<ActivateMotorEvent>();
+        var activateMotorEvent = _eventAggregator.GetEvent<UpdateMotorEvent>();
 
         if (subscriptionToken != null)
         {
           activateMotorEvent.Unsubscribe(subscriptionToken);
         }
 
-        subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler, ThreadOption., false);
+        subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler, ThreadOption.BackgroundThread, false);
       }
 
       #region Handlers

@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Windows.Input;
+using ECH.Infrastructure;
 using ECH.Infrastructure.Events;
+using ECH.Infrastructure.Implementation;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Unity;
@@ -19,13 +21,15 @@ namespace ECH.ModuleA.ViewModels
 
             StartCommand = new DelegateCommand(StartCommandExecute, StartCommandCanExecute);
             StopCommand = new DelegateCommand(StopCommandExecute, StopCommandCanExecute);
-            RotationSpeedCommand = new DelegateCommand(RotationSpeedCommandExecute, RotationSpeedCommandCanExecute);
             RotationDirectionCommand = new DelegateCommand<object>(RotationDirectionCommandExecute, RotationDirectionCommandCanExecute);
+            SaveSettings = new DelegateCommand(SaveSettingsExecute, SaveSettingsCanExecute);
         }
+
         public ICommand StartCommand { get; set; }
         public ICommand StopCommand { get; set; }
         public ICommand RotationSpeedCommand { get; set; }
         public ICommand RotationDirectionCommand { get; set; }
+        public ICommand SaveSettings { get; set; }
 
         public RotationDirection Clockwise
         {
@@ -36,30 +40,36 @@ namespace ECH.ModuleA.ViewModels
             get { return RotationDirection.AntiClockwise; }
         }
 
+        public int SpeedPercentage { get; set; }
+        public int SpeedRPM { get; set; }
+        public string StatusText { get; set; }
+        public RotationDirection Direction { get; set; }
+
         #region Commands Execute
+
+        private void SaveSettingsExecute()
+        {
+            var motor = _container.Resolve<Motor>();
+            motor.Rotation = Direction;
+            motor.Speed = SpeedPercentage;
+        
+            _eventAggregator.GetEvent<UpdateMotorEvent>().Publish(motor);
+        }
 
         private void StartCommandExecute()
         {
-            var motor = new Motor();
+            var motor = _container.Resolve<Motor>();
             motor.Activated = true;
 
-            _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
+            _eventAggregator.GetEvent<UpdateMotorEvent>().Publish(motor);
         }
 
         private void StopCommandExecute()
         {
-            var motor = new Motor();
+            var motor = _container.Resolve<Motor>();
             motor.Activated = false;
 
-            _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
-        }
-
-        private void RotationSpeedCommandExecute()
-        {
-            var motor = new Motor();
-            motor.Activated = false;
-
-            _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
+            _eventAggregator.GetEvent<UpdateMotorEvent>().Publish(motor);
         }
 
         private void RotationDirectionCommandExecute(object arg)
@@ -69,12 +79,20 @@ namespace ECH.ModuleA.ViewModels
             motor.Activated = true;
             motor.Rotation = RotationDirection.Clockwise;
 
-            _eventAggregator.GetEvent<ActivateMotorEvent>().Publish(motor);
+            _eventAggregator.GetEvent<UpdateMotorEvent>().Publish(motor);
         }
 
         #endregion
 
         #region Commands CanExecute
+
+        private bool SaveSettingsCanExecute()
+        {
+            return SpeedPercentage != null
+                && SpeedPercentage <= 100
+                && SpeedPercentage >= 0
+                && Direction != null;
+        }
 
         private bool StartCommandCanExecute()
         {
@@ -82,11 +100,6 @@ namespace ECH.ModuleA.ViewModels
         }
 
         private bool StopCommandCanExecute()
-        {
-            return true;
-        }
-
-        private bool RotationSpeedCommandCanExecute()
         {
             return true;
         }

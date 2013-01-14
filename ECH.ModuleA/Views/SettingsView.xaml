@@ -31,7 +31,7 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid Background="Orange">
+    <Grid>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
@@ -39,6 +39,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
@@ -65,18 +66,20 @@
             Grid.Row="3" 
             Text="Status" />
 
-        <!--<TextBlock
+        <TextBlock
             Grid.Column="1"
             Grid.Row="3" 
-            Text="{Binding StatusText}" />-->
+            Text="{Binding Path=StatusText}" />
 
         <TextBox
             Grid.Column="1"
-            Grid.Row="0" />
+            Grid.Row="0" 
+            Text="{Binding Path=SpeedPercentage}"/>
 
         <TextBox
             Grid.Column="1"
-            Grid.Row="1" />
+            Grid.Row="1" 
+            Text="{Binding Path=SpeedRPM}"/>
 
         <StackPanel 
             Grid.Column="1"
@@ -92,6 +95,21 @@
                 Content="CCW"
                 cmd:Click.Command="{Binding Path=RotationDirectionCommand}"
                 cmd:Click.CommandParameter="{Binding Path=Clockwise}"/>
+        </StackPanel>
+        
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="4"
+            Orientation="Horizontal">
+            
+            <Button
+                Content="Save"
+                cmd:Click.Command="{Binding Path=SaveSettings}" />
+
+            <Button
+                Content="Reset"
+                cmd:Click.Command="{Binding Path=ResetSettings}" />
+            
         </StackPanel>
     </Grid>
 </UserControl>

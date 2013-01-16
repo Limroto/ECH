@@ -1,5 +1,5 @@
 namespace ECH.Infrastructure.Interfaces
 {
-    public interface IGlobalValues
+    public interface IGlobalValues : IMotor
     {}
 }

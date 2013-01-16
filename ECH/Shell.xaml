@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     Width="400"
     Height="500"
-    ResizeMode="NoResize">
+    ResizeMode="NoResize"
+    Background="LightBlue">
 
     <Window.Resources>
         <ItemContainerTemplate DataType="">
@@ -16,7 +17,7 @@
         </ItemContainerTemplate>
     </Window.Resources>
 
-    <Grid x:Name="LayoutRoot" Background="LightGray">
+    <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" MinHeight="100"/>
             <RowDefinition Height="4*" MinHeight="400"/>
@@ -46,7 +47,7 @@
             Grid.Row="1"
             Grid.Column="0"
             HorizontalAlignment="Right"
-            Background="LightGray"
+            Background="LightBlue"
             Width="5"/>
 
         <ContentControl 

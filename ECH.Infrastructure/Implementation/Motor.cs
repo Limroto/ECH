@@ -1,14 +1,18 @@
 using ECH.Infrastructure.Interfaces;
+using Microsoft.Practices.Unity;
 
 namespace ECH.Infrastructure.Implementation
 {
     public class Motor : IMotor
     {
-        public Motor()
+        private readonly IUnityContainer _container;
+
+        public Motor(IUnityContainer container)
         {
-            Activated = GlobalValues.Instance.Activated;
-            Rotation = GlobalValues.Instance.Rotation;
-            Speed = GlobalValues.Instance.Speed;
+            _container = container;
+            Activated = _container.Resolve<IGlobalValues>().Activated;
+            Rotation = _container.Resolve<IGlobalValues>().Rotation;
+            Speed = _container.Resolve<IGlobalValues>().Speed;
         }
 
         public bool Activated { set; get; }

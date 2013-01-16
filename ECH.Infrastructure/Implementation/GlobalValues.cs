@@ -6,9 +6,9 @@ using Microsoft.Practices.Unity;
 
 namespace ECH.Infrastructure.Implementation
 {
-    public class GlobalValues : IGlobalValues, IMotor
+    public class GlobalValues : IGlobalValues
     {
-        private readonly IUnityContainer _container;
+        //private readonly IUnityContainer _container;
         private readonly IEventAggregator _eventAggregator;
         private SubscriptionToken subscriptionToken;
         private static GlobalValues _instance;
@@ -22,15 +22,15 @@ namespace ECH.Infrastructure.Implementation
             }
         }
 
-        public static void Create(IUnityContainer container, IEventAggregator eventAggregator)
+        public static void Create(/*IUnityContainer container,*/ IEventAggregator eventAggregator)
         {
             if(_instance == null)
-                _instance = new GlobalValues(container, eventAggregator);
+                _instance = new GlobalValues(/*container,*/ eventAggregator);
         }
 
-        private GlobalValues(IUnityContainer container, IEventAggregator eventAggregator)
+        private GlobalValues(/*IUnityContainer container,*/ IEventAggregator eventAggregator)
         {
-            _container = container;
+            //_container = container;
             _eventAggregator = eventAggregator;
 
             Speed = 0;
@@ -59,7 +59,7 @@ namespace ECH.Infrastructure.Implementation
         }
 
         public bool Activated { get; private set; }
-        public int Speed { get; set; }
-        public RotationDirection Rotation { get; set; }
+        public int Speed { get; private set; }
+        public RotationDirection Rotation { get; private set; }
     }
 }

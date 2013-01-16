@@ -16,6 +16,17 @@
             <Setter Property="Margin" Value="10" />
             <Setter Property="FontWeight" Value="Bold" />
         </Style>
+        
+        <Style TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0, 0.7" EndPoint="0, 0.9">
+                        <GradientStop Color="Lavender" Offset="0"/>
+                        <GradientStop Color="LightBlue" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </UserControl.Resources>
 
     <Grid>

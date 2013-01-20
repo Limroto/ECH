@@ -1,6 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows.Input;
-using ECH.Infrastructure;
 using ECH.Infrastructure.Events;
 using ECH.Infrastructure.Implementation;
 using Microsoft.Practices.Prism.Commands;
@@ -9,21 +9,26 @@ using Microsoft.Practices.Unity;
 
 namespace ECH.ModuleC.ViewModels
 {
-    public class TopViewModel : INotifyPropertyChanged
+    public class TopViewViewModel : INotifyPropertyChanged
     {
         private readonly IUnityContainer _container;
         private readonly IEventAggregator _eventAggregator;
 
-        public TopViewModel(IUnityContainer container, IEventAggregator eventAggregator)
+        public TopViewViewModel(IUnityContainer container, IEventAggregator eventAggregator)
         {
             _container = container;
             _eventAggregator = eventAggregator;
             StartCommand = new DelegateCommand(StartCommandExecute, StartCommandCanExecute);
             StopCommand = new DelegateCommand(StopCommandExecute, StopCommandCanExecute);
+
+            AvailableBoards = new ObservableCollection<StkBoard>();
         }
 
         public ICommand StartCommand { get; set; }
         public ICommand StopCommand { get; set; }
+
+        public ObservableCollection<StkBoard> AvailableBoards { get; set; }
+        public StkBoard SelectedBoard { get; set; }
 
         #region Commands Execute
 
@@ -50,12 +55,13 @@ namespace ECH.ModuleC.ViewModels
 
         private bool StartCommandCanExecute()
         {
-            return true;
+            return SelectedBoard != null;
         }
 
         private bool StopCommandCanExecute()
         {
-            return true;
+            return SelectedBoard != null;
+            
         }
 
         #endregion

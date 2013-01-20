@@ -73,7 +73,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewModels\TopViewModel.cs" />
+    <Compile Include="Model\TopView.cs" />
+    <Compile Include="ViewModels\TopViewViewModel.cs" />
     <Compile Include="Views\TopView.xaml.cs">
       <DependentUpon>TopView.xaml</DependentUpon>
     </Compile>

@@ -12,11 +12,11 @@ namespace ECH.ModuleC
 	[ViewSortHint("01")]
 	public partial class TopView : UserControl
 	{
-	  private readonly TopViewModel _topViewModel;
+	  private readonly TopViewViewModel _topViewViewModel;
 	  
-	  public TopView(TopViewModel topViewModel)
+	  public TopView(TopViewViewModel topViewViewModel)
 	  {
-	    _topViewModel = topViewModel;
+	    _topViewViewModel = topViewViewModel;
 	    InitializeComponent();
 	  }
   }

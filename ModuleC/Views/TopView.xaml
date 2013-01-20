@@ -8,7 +8,7 @@
     mc:Ignorable="d" 
     d:DesignHeight="100" 
     d:DesignWidth="400">
-    
+
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Width" Value="80" />
@@ -16,7 +16,7 @@
             <Setter Property="Margin" Value="10" />
             <Setter Property="FontWeight" Value="Bold" />
         </Style>
-        
+
         <Style TargetType="Grid">
             <Setter Property="Background">
                 <Setter.Value>
@@ -27,6 +27,12 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <DataTemplate x:Key="Boards">
+            <TextBlock 
+                Text="{Binding Path=SelectedBoard.Name}" 
+                Width="Stretch"/>
+        </DataTemplate>
     </UserControl.Resources>
 
     <Grid>
@@ -35,7 +41,32 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-      
+
+        <StackPanel
+            Grid.Column="0"
+            Margin="10"
+            VerticalAlignment="Center">
+
+            <TextBlock
+                Text = "Selected Board" 
+                Margin="0 2"/>
+
+            <ListBox
+                HorizontalAlignment="Left"
+                Width="100"
+                Height="25"
+                ItemsSource="{Binding Path=AvailableBoards}"
+                SelectedItem="{Binding Path=SelectedBoard.Name, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+                
+
+        </StackPanel>
+
         <Button 
             Grid.Column="1"
             Background="Green"
@@ -43,11 +74,10 @@
             cmd:Click.Command="{Binding StartCommand}"/>
 
         <Button 
-            Grid.Column="3"
+            Grid.Column="2"
             Background="Red"
             Content="Stop"
             cmd:Click.Command="{Binding StopCommand}"/>
-
 
     </Grid>
 </UserControl>

@@ -9,7 +9,7 @@ namespace ECH.Infrastructure.Implementation
     public class GlobalValues : IGlobalValues
     {
         private readonly IEventAggregator _eventAggregator;
-        private SubscriptionToken subscriptionToken;
+        private SubscriptionToken _subscriptionToken;
         private static GlobalValues _instance;
         public static GlobalValues Instance
         {
@@ -41,12 +41,12 @@ namespace ECH.Infrastructure.Implementation
         {
             var activateMotorEvent = _eventAggregator.GetEvent<UpdateMotorEvent>();
 
-            if (subscriptionToken != null)
+            if (_subscriptionToken != null)
             {
-                activateMotorEvent.Unsubscribe(subscriptionToken);
+                activateMotorEvent.Unsubscribe(_subscriptionToken);
             }
 
-            subscriptionToken = activateMotorEvent.Subscribe(UpdateMotorHandler, ThreadOption.BackgroundThread, false);
+            _subscriptionToken = activateMotorEvent.Subscribe(UpdateMotorHandler, ThreadOption.BackgroundThread, false);
         }
 
         private void UpdateMotorHandler(Motor obj)

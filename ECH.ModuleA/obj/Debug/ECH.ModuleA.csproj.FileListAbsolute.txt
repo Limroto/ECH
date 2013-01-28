@@ -52,3 +52,31 @@ C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA_MarkupCo
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.dll
 C:\Users\Becks\Documents\Projects\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.pdb
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\ECH.ModuleA.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\ECH.ModuleA.pdb
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\ECH.Infrastructure.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\NLog.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\ECH.Infrastructure.pdb
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\bin\Debug\NLog.xml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.csprojResolveAssemblyReference.cache
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.baml
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\Views\SettingsView.g.cs
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA_MarkupCompile.cache
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.g.resources
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.dll
+C:\Users\Becks Laptop\Documents\ECH\ECH.ModuleA\obj\Debug\ECH.ModuleA.pdb

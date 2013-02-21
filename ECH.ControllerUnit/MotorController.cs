@@ -1,5 +1,4 @@
 ﻿using System.Media;
-using ECH.Infrastructure;
 using ECH.Infrastructure.Events;
 using ECH.Infrastructure.Implementation;
 using Microsoft.Practices.Prism.Events;
@@ -9,7 +8,7 @@ namespace ECH.ControllerUnit
     public class MotorController
     {
       private readonly IEventAggregator _eventAggregator;
-      private SubscriptionToken subscriptionToken;
+      private SubscriptionToken _subscriptionToken;
 
       public MotorController(IEventAggregator eventAggregator)
       {
@@ -22,12 +21,12 @@ namespace ECH.ControllerUnit
       {
         var activateMotorEvent = _eventAggregator.GetEvent<UpdateMotorEvent>();
 
-        if (subscriptionToken != null)
+        if (_subscriptionToken != null)
         {
-          activateMotorEvent.Unsubscribe(subscriptionToken);
+          activateMotorEvent.Unsubscribe(_subscriptionToken);
         }
 
-        subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler, ThreadOption.BackgroundThread, false);
+        _subscriptionToken = activateMotorEvent.Subscribe(ActivateMoterHandler, ThreadOption.BackgroundThread, false);
       }
 
       #region Handlers

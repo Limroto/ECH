@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Prism.Modularity;
+﻿using ECH.Database.Implementation;
+using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Unity;
 
 namespace ECH.Database
@@ -21,7 +22,7 @@ namespace ECH.Database
 
         public void Initialize()
         {
-            ConfigurationBuilder cfg = _container.Resolve<ConfigurationBuilder>();
+            _container.Resolve<ConfigurationBuilder>();
         }
     }
 }

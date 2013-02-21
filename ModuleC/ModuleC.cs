@@ -32,8 +32,6 @@ namespace ECH.ModuleC
             IRegion topRegion = _regionManager.Regions["HeaderRegion"];
             topRegion.Add(topView1);
 
-            _container.Resolve<TopViewModel>();
-
             ResolveObjects();
         }
 

@@ -2,7 +2,6 @@
 using ECH.ModuleB.Views;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
-using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
 
 namespace ECH.ModuleB
@@ -27,9 +26,9 @@ namespace ECH.ModuleB
 
     public void Initialize()
     {
-      MenuView topView1 = _container.Resolve<MenuView>();
+      var topView1 = _container.Resolve<MenuView>();
 
-      IRegion topRegion = _regionManager.Regions["MenuRegion"];
+      var topRegion = _regionManager.Regions["MenuRegion"];
       topRegion.Add(topView1);
     }
   }

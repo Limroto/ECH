@@ -26,9 +26,9 @@ namespace ECH.ModuleA
 
     public void Initialize()
     {
-      SettingsView topView1 = _container.Resolve<SettingsView>();
+      var topView1 = _container.Resolve<SettingsView>();
 
-      IRegion topRegion = _regionManager.Regions["MainRegion"];
+      var topRegion = _regionManager.Regions["MainRegion"];
       topRegion.Add(topView1);
     }
   }

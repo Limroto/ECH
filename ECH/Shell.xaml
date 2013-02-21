@@ -9,12 +9,13 @@
     Width="400"
     Height="500"
     ResizeMode="NoResize"
-    Background="LightBlue">
+    Background="Lavender">
 
     <Window.Resources>
         <ItemContainerTemplate DataType="">
 
         </ItemContainerTemplate>
+       
     </Window.Resources>
 
     <Grid x:Name="LayoutRoot">
@@ -47,7 +48,7 @@
             Grid.Row="1"
             Grid.Column="0"
             HorizontalAlignment="Right"
-            Background="LightBlue"
+            Background="Transparent"
             Width="5"/>
 
         <ContentControl 

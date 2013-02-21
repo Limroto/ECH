@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using ECH.Infrastructure.Events;
 using ECH.Infrastructure.Implementation;
+using ECH.Infrastructure.Interfaces;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Unity;

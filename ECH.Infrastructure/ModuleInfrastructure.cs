@@ -20,18 +20,19 @@ namespace ECH.Infrastructure
 		{
 		    GlobalValues.Create(_container.Resolve<EventAggregator>());
 		    var singleton = GlobalValues.Instance;
-            _container.RegisterInstance<IGlobalValues>(singleton);
-		    _container.RegisterType<DeviceInsertionEvents>();
-			_container.RegisterType<UpdateMotorEvent>();
-			_container.RegisterType<Motor>();
-			_container.RegisterType<RotationDirection>();
+            _container.RegisterInstance<IGlobalValues>(singleton); //Singleton with parameter
+
+		    _container.RegisterType<DeviceInsertionEvents>(); //Event
+			_container.RegisterType<UpdateMotorEvent>(); //Event
+			_container.RegisterType<IMotor, Motor>();
+			_container.RegisterType<RotationDirection>(); //enum
 
 		    ResolveObjects();
 		}
 
 	    private void ResolveObjects()
 	    {
-	        var kits = _container.Resolve<DeviceInsertionEvents>();
+	        _container.Resolve<DeviceInsertionEvents>(); //Event
         }
 	}
 }
